@@ -1,0 +1,29 @@
+{
+  "name": "globusgroup/laravel-settings-manager",
+  "description": "A Laravel package to manage runtime settings for a laravel application.",
+  "authors": [
+    {
+      "name": "Dean Ward",
+      "email": "dean.ward@globus.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+  },
+  "autoload": {
+    "psr-4": {
+      "globusgroup\\LaravelSettingsManager\\": "src/"
+    },
+    "files": ["src/helpers.php"]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "globusgroup\\LaravelSettingsManager\\SettingsManagerServiceProvider"
+      ],
+      "aliases": {
+        "SettingsManager": "globusgroup\\LaravelSettingsManager\\SettingsManagerFacade"
+      }
+    }
+  }
+}
