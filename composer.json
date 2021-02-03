@@ -25,5 +25,6 @@
         "SettingsManager": "globusgroup\\LaravelSettingsManager\\SettingsManagerFacade"
       }
     }
-  }
+  },
+  "licence": "MIT"
 }
